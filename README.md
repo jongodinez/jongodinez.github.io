@@ -1,2 +1,2 @@
 # Personal-Portfolio
-A personal portfolio showcasing my work.
+Currently under construction.
