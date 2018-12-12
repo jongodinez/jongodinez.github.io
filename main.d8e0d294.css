@@ -11,8 +11,11 @@ html{
     -webkit-text-size-adjust:100%
 }
 body{
-    margin:0
+    margin:0;
+    background-color: #ff0060;
 }
+
+
 
 #welcome-section {
     height: 100%;
@@ -22,6 +25,7 @@ nav ul {
     text-align: right;
     position: fixed;
     width: 100%;
+    height: 60px;
     background-color: #ff0060;
     z-index: 8;
 }
