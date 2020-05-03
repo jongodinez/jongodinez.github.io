@@ -1,0 +1,153 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Jon Godinez}}\\
+	jonathanjgodinez@gmail.com $\cdot$ 707 628 5228 $\cdot$ linkedin.com/in/jongodinez \textbar{} github.com/jongodinez\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{UC Berkeley}\\
+Post-baccalaureate, Bio/Chem/Physics \hfill Jun 2020 - Jun 2022\\
+\vspace{2mm}
+\textbf{Western Governors University}\\
+M.B.A. Operations Research \hfill 2018 - 2019\\
+\vspace{2mm}
+\textbf{Thomas Edison State University}\\
+B.A. Social Sciences \& Computer Science \hfill 2015 - 2017\\
+\vspace{2mm}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Languages:          & Python, Java, JavaScript                                                  \\
+	Technologies:       & cloud services, internet architecture, network security                   \\
+	Personal Interests: & running, reading (sci fi, horror), systems biology, tech entrepreneurship \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{Solar System Orbit Analysis \textbar{} 2020 \textbar{}}} {\sl Planetary Science, Python, NASA SPICE, NumPy} \hfill github.com/jongodinez/space-science-in-python\\
+Application that visualizes barycenter of our solar system (SSB) using NASA JPL SPICE framework in Python.\\
+\vspace*{2mm}
+{\textbf{AI Facial Recognition Application \textbar{} 2018 \textbar{}}} {\sl Machine Learning, Clarifai ML API, React.js} \hfill github.com/jongodinez/SmartyPants-Face-Recognition-App\\
+Full-stack application that uses machine learning to identify faces in images.\\
+\vspace*{2mm}
+{\textbf{RoboFriends \textbar{} 2018 \textbar{}}} {\sl Front-End, React.js, roboFriends API} \hfill github.com/jongodinez/roboFriends\\
+Application built in React to practice dynamic searching through containers.\\
+\vspace*{2mm}
+
+%==== Experience ====%
+\header{Industry Experience}
+\vspace{1mm}
+
+\textbf{Cloudflare} \hfill San Francisco Bay Area\\
+\textit{New Business Development \textbar{} Technical Sales} \hfill May 2019 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Joined pre-IPO; led enterprise technical infrastructure projects
+	\item Managed technical sales cycles; sourced over \$4 mil in pipeline revenue across strategic accounts
+	\item Certificate: Cloudflare Accredited Sales Engineer (ASE)
+\end{itemize}
+\textbf{Gold Rush Maids} \hfill San Francisco Bay Area\\
+\textit{Head, Technology \& Growth \textbar{} post-acquisition} \hfill Aug 2018 - Apr 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Led all technology initiatives \& commercial sales/marketing
+	\item Manage all web infrastructure \& built the commercial B2B function
+	\item Tech: WordPress, Cloud services, SaaS \& API integrations
+\end{itemize}
+\textbf{Gold Rush Maids} \hfill San Francisco Bay Area\\
+\textit{Founder \textbar{} acquired} \hfill Jun 2016 - Jan 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Led all technical/biz operations till acquisition; 75\% buyout in Jan 2019
+	\item Took company from 0 to 10 employees \& \textasciitilde{}\$20k MRR
+	\item Home services start-up that allowed customers to book online, manage, \& track bookings
+\end{itemize}
+\textbf{Shaffer Engineering} \hfill San Francisco Bay Area\\
+\textit{Software Engineer} \hfill Apr 2018 - Dec 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Managed technical projects/wrote code for contract clients
+	\item Wireframe product, helped influence deadlines, helped in business operations
+	\item Tech: PERN stack, JavaScript, \& web admin responsibilities
+\end{itemize}
+
+\header{Publications}
+\textbf{First Author Publication} \hfill Journal of Strategic Security\\
+\textquotedbl{}The Vested Interest Theory: Novel Methodology Examining US-Foreign Electoral Intervention\textquotedbl{} - Undergrad research in foreign electoral espionage resulted in first-author publication. \hfill 2018\\
+\vspace*{2mm}
+
+\ 
+\end{document}
